@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "UpdateProducts";
+    Layout = "~/Views/Shared/adminshared.cshtml";
+}
+
+<body>
+    <div class="header-bottom">
+        <div class="wrap">
+            <div class="single">
+
+                <div class="section group">
+                    <div class="col span_2_of_contact">
+                        <div class="contact-form">
+
+                            <form method="post" action="/Admin/UpdateConfirm">
+
+                                
+                                 <input type="text" name="DressCode" placeholder=" DressCode" required />
+                                <input type="text" name="DesignerName" placeholder=" DesignerName" required />
+                                 <input type="text" name="Oprice" placeholder=" Original Price" required />
+                                <input type="text" name="Price" placeholder="Discount Price" required />
+                                 <input type="text" name="OrderId" placeholder=" OrderId" required />
+                                 <input type="text" name="AdminId" placeholder=" AdminId" required />
+                                 <input type="text" name="details" placeholder=" details" required />
+                                
+
+                                
+                                <div>
+                                    <span><input type="submit" value="Update"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ONLINE_BOUTIQUE | Home</title>
+    <link href="~/Style/global.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Style/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Style/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Style/global.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Visual Slideshow, Fade Slideshow, Photo Slideshows" />
+    <meta name="description" content="Visual Slideshow created with Visual Slideshow, a free wizard program that helps you easily generate beautiful web slideshow" />
+   
+    <script src="~/Scripts/bootstrap.js"></script>
+    
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    
+    
+    
+    
+    
+     <link rel="stylesheet" type="text/css" href=" ~\engine\css\slideshow.css" media="screen" />
+    <style type="text/css">
+        .slideshow a#vlb {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="~\engine\js\mootools.js"></script>
+    <script type="text/javascript" src="~\engine\js\visualslideshow.js"></script>
+   
+
+</head>
+    <body>
+        <div class="header">
+        <div class="wrap">
+            <div class="header-bot">
+                <div class="logo">
+                    <a href="index.html"><img src="~/Fashion/chora1.png" alt=""></a>
+
+                </div>
+                <div class="cart">
+                    <div class="cart1"></div>
+                    
+                    <div id="top-search">
+                        <form method="post" action="/Client/SearchResult">
+                            <input type="text" name="s" class="input-search"><input type="submit" value="Search" id="submit" />
+                        </form>
+                    </div>
+                    </div>
+
+
+                   @* <ul class="nav nav-brand" role="navigation" style="padding-left: -150%">
+                        <li class="active"><a href="~/Client/index">Home</a></li>
+                        <li><a href="~/Client/Aboutboutique">About</a></li>
+                        <li><a href="~/Client/services">Services</a></li>
+                        <li><a href="~/Client/contact">Contact</a></li>
+
+                    </ul>*@
+                    <div id="h-nav" >
+                      <nav class="navbar navbar-inverse navbar-fixed-top">
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <a class="navbar-brand" href="#">     Hi    </a>
+                        </div>
+                        <div>
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="~/Client/index">Home</a></li>
+                            <li><a href="~/Client/Aboutboutique">About</a></li>
+                            <li><a href="~/Client/services">Services</a></li> 
+                            <li><a href="~/Client/contact">Contact</a></li> 
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+
+</div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+         
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+       </body>
+        <div class="footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="footer-grid twitts">
+                        
+                       <h3>Latest Tweets</h3>
+                        <p><label>Last Visit</label></p>
+                        <span>10 minutes ago</span>
+                        <p><label>Second Last Visit</label></p>
+                        <span>15 minutes ago</span>
+                    </div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="footer-grid center-grid">
+
+                    </div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="footer-grid twitts">
+                        <h3>Our Company</h3>
+                        <div class="f_menu">
+                            <ul>
+                                <li>Shop whatever the style you want</li>
+                                <li>Be with us and get the best ever</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="call_info">
+                        <p class="txt_3">Call us toll free:</p>
+                        <p class="txt_4">11 50 50 777</p>
+                    </div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="footer-grid twitts">
+                        <h3>Get in touch</h3>
+                        <ul class="follow_icon">
+                            <li><a href="http://google.com/" style="opacity: 1;"><img src="~/images/follow_icon.png" alt=""></a></li>
+                            <li><a href="http://twitter.com/" style="opacity: 1;"><img src="~/images/follow_icon1.png" alt=""></a></li>
+                            <li><a href="http://facebook.com/" style="opacity: 1;"><img src="~/images/follow_icon2.png" alt=""></a></li>
+                           
+                        </ul>
+                        <p>+1 111-111-1111</p>
+                        <span>support(at)OnlineBoutique.com</span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+   </div>
+    <div class="copy-right">
+        <div class="wrap">
+            <p>Design by <a href="bitf12M047 EAD Project">bitf12M047 EAD Project</a></p>
+        </div>
+    </div>
+    
+
+</html>
+
+
+
+

@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "OrderForm";
+}
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="header-bottom">
+    <div class="wrap">
+        <div class="single">
+            <div class="heading">
+                <h3>BUYING PROCESS </h3>
+                <p> If u are interesting in buying  , just fill out the form with the information demanded, submit you request .. we will verify your request and after verification we will issue the demanded dress code number to your id , and the dress will be deliverd to you after the completion of payment process. </p>
+            </div>
+            <div class="section group">
+                <div class="col span_2_of_contact">
+                    <div class="contact-form">
+
+                        <form action="/Client/AddOrder" method="post" >
+                            <div class="company_address"><center><h1>ORDER  FORM</h1></center></div>
+                            
+                                <span><label>Name</label></span>
+                                <span><input name="Name" type="text" class="textbox"></span>
+                           
+
+                                <span><label>Email</label></span>
+                                <span><input name="Email" type="Email" class="textbox"></span>
+                           
+                                <span><label>CNIC</label></span>
+                                <span><input name="CNIC" type="text" class="textbox"></span>
+                            
+                                <span><label>Address</label></span>
+                                <span><input name="Address" type="text" class="textbox"></span>
+                           
+                                <span><label>DressCode</label></span>
+                                <span><input name="DressCode" type="text" class="textbox"></span>
+                           
+                                <span><label>ClientId</label></span>
+                                <span><input name="ClientId" type="text" class="textbox"></span>
+                            
+                                <span><label>DebitCardNo</label></span>
+                                <span><input name="DebitCardNo" type="text" class="textbox"></span>
+                         
+                                <span><input type="submit" value="Submit"></span>
+                            
+                        </form>
+                    </div>
+                </div>
+                <div class="col span_1_of_3">
+                    <div class="company_address">
+                        <h3>Address</h3>
+                        <p>PUCIT, OLD CAMPUS ,</p>
+                        <p>PUNJAB UNIVERSITY, THE MALL</p>
+                        <p>LAHORE</p>
+                        <p>Phone:(00) 0304-5466743</p>
+                        <p>Fax: (000)-- -- -- --</p>
+                        <p>Email: <span>bitf12m000@pucit.edu.pk</span></p>
+                        <p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+

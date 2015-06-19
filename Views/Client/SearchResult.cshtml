@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "SearchResult";
+    Layout ="~/Views/Shared/_Layout.cshtml";
+}
+
+@using termproject.Models;
+
+<body> <br /><br />
+     @{
+                        foreach(Dress dd in Model)
+                        { 
+                        <img src="~/Fashion1/@dd.image" alt="" />
+                        <div class="grid_desc">
+                            <p class="title">@dd.DesignerName </p>
+
+                            <div class="price1" style="height: 19px;">
+                               <span class="reducedfrom">@dd.Price</span>
+                                <span class="actual">@dd.Oprice</span>
+                            </div>
+                        </div>
+                        <div class="Details">
+                            <form method="post"  action="~/Client/single"><input type="hidden"  name="details" value="@dd.details" /><input type="hidden" name="image" value="@dd.image" /><span><input type="submit" Value="Details" ></span></form>
+                        </div>
+                    }
+                    }
+          
+</body>

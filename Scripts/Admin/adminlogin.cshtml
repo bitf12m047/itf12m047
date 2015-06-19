@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "adminlogin";
+    Layout = "~/Views/Shared/adminshared.cshtml";
+}
+
+
+<body> 
+    <div class="header-bottom">
+        <div class="wrap">
+            <div class="single">
+
+                <div class="section group">
+                    <div class="col span_2_of_contact">
+                        <div class="contact-form">
+
+                            <form method="post" action="http://localhost:2525/SpmProject/AdminSevlet">
+
+                                <input type="text" name="user Name" placeholder="user Name" /><br />
+                                <input type="text" name="password" placeholder="password" />
+                                <div>
+                                    <span><input type="submit" value="Log in"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>

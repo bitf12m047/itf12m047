@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "adminlogin1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+  
+}
+
+
+
+<body> 
+   
+                <div class="section group">
+                    <div class="col span_2_of_contact">
+                        <div class="contact-form">
+                            @*<a href="/Admin/checkAdmin"></a>*@
+                            <form  action="/Admin/checkAdmin"  method="post">
+
+                                <input type="text" name="Name" placeholder="Name" required /><br />
+                                <input type="text" name="Password" placeholder="Password" required />
+                                <div>
+                                    <span><input type="submit" value="Log in"></span>
+                                </div>
+                            </form>
+                             
+                         
+                        </div>
+                    </div>
+                </div>
+            
+    </body>
+   

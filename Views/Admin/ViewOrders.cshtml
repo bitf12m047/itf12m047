@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "ViewOrders";
+    Layout = "~/Views/Shared/adminshared.cshtml";
+}
+
+@using termproject.Models;
+
+<body>
+    <hr />
+    <div class="center_content" style="display:table-cell; width:1100px; float:right; height:auto">
+     <table border="1" style="width:60% ; border:solid; border-color:firebrick;">
+         <tr style=" border:solid; border-color:firebrick;">
+             <td>name</td>
+
+             <td style=" border:solid; border-color:firebrick;">email</td>
+             <td style=" border:solid; border-color:firebrick;">CNIC</td>
+             <td style=" border:solid; border-color:firebrick;">address</td>
+             <td style=" border:solid; border-color:firebrick;"> dress code</td>
+             <td style=" border:solid; border-color:firebrick;"> zip</td>
+             <td style=" border:solid; border-color:firebrick;">client id</td>
+
+         </tr>
+         
+    
+        @{boutiquedbEntities6 d = new boutiquedbEntities6();
+          List<Order> o = d.Orders.ToList<Order>();
+         
+         foreach(Order od in o){
+             <tr style=" border:solid; border-color:firebrick;">
+                 <td style=" border:solid; border-color:firebrick;">
+                      @od.Name
+                 </td>
+                  <td style=" border:solid; border-color:firebrick;">
+                      @od.Email
+                 </td>
+                  <td style=" border:solid; border-color:firebrick;">
+                      @od.CNIC
+                 </td>
+                  <td style=" border:solid; border-color:firebrick;">
+                      @od.Address
+                 </td>
+                  <td style=" border:solid; border-color:firebrick;">
+                      @od.DressCode
+                 </td>
+                  <td style=" border:solid; border-color:firebrick;">
+                      @od.DebitCardNo
+                 </td>
+                  <td style=" border:solid; border-color:firebrick;">
+                      @od.ClientId
+                 </td>
+
+             </tr>
+              
+                     
+                
+          }
+             
+}
+          </table>
+        </div>
+
+</body>
+

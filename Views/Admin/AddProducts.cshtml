@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "AddProducts";
+    Layout = "~/Views/Shared/adminshared.cshtml";
+}
+
+<body>
+    <div class="header-bottom">
+        <div class="wrap">
+            <div class="single">
+
+                <div class="section group">
+                    <div class="col span_2_of_contact">
+                        <div class="contact-form">
+
+                            <form method="post" action="/Admin/NewProducts" enctype="multipart/form-data">
+
+                               @* <input type="text" name="Dress Code" placeholder=" Dress Code" />*@
+                                <input type="text" name="DesignerName" placeholder="Designer Name" required />
+                                <input type="text" name="Oprice" placeholder="Original Price" required />
+                                <input type="text" name="Price" placeholder=" Discount Price" required/>
+                                <input type="text" name="OrderId" placeholder="OrderId" required />
+                                <input type="text" name="AdminId" placeholder="AdminId"required />
+                                <input type="text" name="details" placeholder="details"required />
+                                <input type="file" name="image" />
+                                <div>
+                                    <span><input type="submit" value="ADD"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

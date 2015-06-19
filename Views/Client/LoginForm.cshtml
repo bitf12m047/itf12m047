@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "LoginForm";
+}
+
+
+ <body>
+<div class="header-bottom">
+    <div class="wrap">
+        <div class="single">
+            <div class="heading">
+                <h3>SIGN  IN</h3>
+               
+            </div>
+           
+            <div class="section group">
+                <div class="col span_2_of_contact">
+                    <div class="contact-form">
+
+                        <form method="post" action="/Client/AddClient">
+                           
+                                <span>*<label>First Name</label></span>
+                                <span><input name="Fname" type="text" class="textbox" required></span>
+                           
+                                <span>*<label>Last Name</label></span>
+                                <span><input name="Lname" type="text" class="textbox" required></span>
+                           
+                                <span>*<label>USER NAME</label></span>
+                                <span><input name="UserName" type="text" class="textbox" required></span>
+                          
+                                <span>*<label>Email</label></span>
+                                <span><input name="Email" type="Email" class="textbox" required></span>
+                          
+                                <span>*<label>Password</label></span>
+                                <span><input name="Password" type="Password" class="textbox" required></span>
+                           
+                                 <span>*<label>Country</label></span>
+                           
+                                   <select name="Country">
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="America">America</option>
+                                    <option value="England">England</option>
+                                    <option value="India">India</option>
+                                       <option value="Afghanistan">Afghanistan</option>
+                                    <option value="China">China</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="Dubai">Dubai</option>
+                                    </select>
+                              <span>*<label>Gender</label></span>
+                              <input type="radio" name="Gender" value="male" checked >Male
+                                <br>
+                                <input type="radio" name="Gender" value="female" >Female
+                            
+                                <span>*<label>DOB</label></span>
+                                <span><input name="DOB" type="text" class="textbox" required></span>
+                         
+                            
+                       
+                                    <span><input type="submit" value="Log in"></span>
+                               
+
+                             
+                        </form>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                </div>
+              </div>
+                </div>
+                </div>
+    </body>

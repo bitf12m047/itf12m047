@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout ="~/Views/Shared/_Layout.cshtml";
+}
+@using termproject.Models;
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONLINE_BOUTIQUE | Home </title>
+    <link href="~/Style/global.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Style/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Style/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Style/global.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Visual Slideshow, Fade Slideshow, Photo Slideshows" />
+    <meta name="description" content="Visual Slideshow created with Visual Slideshow, a free wizard program that helps you easily generate beautiful web slideshow" />
+    <!-- Start VisualSlideShow.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href=" ~\engine\css\slideshow.css" media="screen" />
+    <style type="text/css">
+        .slideshow a#vlb {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="~\engine\js\mootools.js"></script>
+    <script type="text/javascript" src="~\engine\js\visualslideshow.js"></script>
+    <!-- End VisualSlideShow.com HEAD section -->
+ 
+
+   
+    </head>
+<body>
+
+  
+
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+    </div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="#"><img id="slide-5" src="~/Fashion/main.jpg" alt="s1" title="s7" /></a>
+
+
+        </div>
+        
+       
+       
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+    <div class="main-content">
+        <div class="wrap">
+            <div class="main-box">
+                <div class="box_wrapper"><h1>Featured Products</h1>
+                
+                    @{
+                        boutiquedbEntities6 b=new boutiquedbEntities6();
+                        List<Dress> d=b.Dresses.ToList<Dress>();
+                        foreach(Dress dd in d)
+                        { 
+                        <img src="~/Fashion1/@dd.image" alt="" />
+                        <div class="grid_desc">
+                            <p class="title">@dd.DesignerName </p>
+
+                            <div class="price1" style="height: 19px;">
+                              <span class="reducedfrom">@dd.Price</span>
+                                <span class="actual">@dd.Oprice</span>
+                            </div>
+                        </div>
+                        <div class="Details">
+                            <form method="post"  action="~/Client/single"><input type="hidden"  name="details" value="@dd.details" /><input type="hidden" name="images" value="@dd.image" /><span><input type="submit" Value="Details" ></span></form>
+                        </div>
+                    }
+                    }
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+</body></html>
+  
+
+
+
+
+
+
